@@ -47,7 +47,7 @@ p {
   &:hover {
     background-color: rgba(241, 44, 44, 0.97);
     /* Muda a cor de fundo */
-    color: rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
     /* Muda a cor do texto */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     /* Adiciona sombra */
@@ -102,7 +102,6 @@ p {
 
 /*========Fim Section Titulos das Sections========*/
 
-
 /*========Section Sobre========*/
 .sectionSobre {
   padding: 70px;
@@ -137,41 +136,46 @@ p {
   font-weight: 600;
   transition: all 0.3s ease;
   padding: 20px;
-  /* Transição suave para todas as propriedades */
 
   /* Efeito de hover */
   &:hover {
     background-color: rgba(255, 91, 91, 0.97);
-    /* Muda a cor de fundo */
     color: rgb(22, 22, 22);
-    /* Muda a cor do texto */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    /* Adiciona sombra */
     transform: translateY(-6px);
-    /* Leve elevação do card */
-
     border-radius: 10px;
   }
 
-  /* Efeito de foco (quando o botão está focado) */
+
   &:focus {
     outline: none;
-    /* Remove o contorno padrão */
     box-shadow: 0 0 10px rgba(235, 255, 51, 0.97);
-    /* Sombra quando focado */
+
   }
 
 }
 
+.botaoVisualizarExperiencias {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .botaoVisualizarExperiencias button {
-  width: auto;
-  height: auto;
   padding: 20px;
   background-color: #6E69FF;
-  display: block;
-  border: #383838;
+  border: none;
   border-radius: 10px;
-  color: white;  
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.botaoVisualizarExperiencias button:hover {
+  background-color: rgba(241, 44, 44, 0.97);
+  transform: translateY(-4px);
+  color: rgb(255, 255, 255);
+
 }
 
 /*Time line sobre minhas experiências*/
@@ -219,8 +223,9 @@ p {
   opacity: 0.9;
 }
 
-.content-logo-empresas{
+.content-logo-empresas {
   width: 50px;
   height: 50px;
 }
+
 /* Fim Time line sobre minhas experiências*/
