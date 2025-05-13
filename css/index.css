@@ -1,5 +1,170 @@
-.homeStyle{
-    width: auto;
-    height: auto;
-    background-color: #F8F5F5;
+/* Reset básico para evitar espaçamentos indesejados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo dos parágrafos */
+p {
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+/*========Section Home========*/
+
+/* Seção principal da home */
+.homeStyle {
+  width: auto;
+  height: auto;
+  padding: 100px;
+  background-color: #F8F5F5;
+  display: flex;
+  flex-wrap: wrap;
+  /* Garante responsividade */
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.homeStyle h1 {
+  size: 900px;
+  font-weight: 700;
+}
+
+.homeStyle button {
+  width: auto;
+  height: 70px;
+  padding: 20px;
+  background-color: #6E69FF;
+  border: none;
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+  /* Transição suave para todas as propriedades */
+
+  /* Efeito de hover */
+  &:hover {
+    background-color: rgba(241, 44, 44, 0.97);
+    /* Muda a cor de fundo */
+    color: rgb(22, 22, 22);
+    /* Muda a cor do texto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
+    transform: translateY(-6px);
+    /* Leve elevação do card */
+  }
+
+  /* Efeito de foco (quando o botão está focado) */
+  &:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    box-shadow: 0 0 10px rgba(235, 255, 51, 0.97);
+    /* Sombra quando focado */
+  }
+}
+
+/* Container da imagem */
+.imagem-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 300px;
+  padding-left: 30px;
+}
+
+/* Estilo da imagem */
+.imagem-perfil img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+/*========Fim Section Home========*/
+
+
+
+/*========Section Titulos das Sections========*/
+
+/*Estilização para os titulos das sections*/
+.titulosSections {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  font-weight: 900;
+
+
+}
+
+/*========Fim Section Titulos das Sections========*/
+
+
+/*========Section Sobre========*/
+.sectionSobre {
+  padding: 70px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  /* flex-direction: row; */
+
+}
+
+.sectionSobre p {
+  padding: 20px;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  max-width: 600px;
+  opacity: 0.7;
+  font-size: 20px;
+
+}
+
+.listaDadosSobre ul li img {
+  width: 70px;
+  height: 70px;
+  list-style: nome;
+}
+
+.listaDadosSobre li {
+  list-style: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 20px;
+  /* Transição suave para todas as propriedades */
+
+  /* Efeito de hover */
+  &:hover {
+    background-color: rgba(255, 91, 91, 0.97);
+    /* Muda a cor de fundo */
+    color: rgb(22, 22, 22);
+    /* Muda a cor do texto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
+    transform: translateY(-6px);
+    /* Leve elevação do card */
+
+    border-radius: 10px;
+  }
+
+  /* Efeito de foco (quando o botão está focado) */
+  &:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    box-shadow: 0 0 10px rgba(235, 255, 51, 0.97);
+    /* Sombra quando focado */
+  }
+
+}
+
+.botaoVisualizarExperiencias {
+  background-color: #6E69FF;
+  display: block;
+  
 }
