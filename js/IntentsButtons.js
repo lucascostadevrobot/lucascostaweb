@@ -1,17 +1,6 @@
 function intentsAbrirProjetos(nomeProjeto) {
     var CONFIG_EXIBE_PROJETOS = true;
 
-
-    const PROJETOS = {
-        ECOPONTO: document.getElementById("btn_EcoPonto"),
-        ECOPONTOWEB: document.getElementById("btn_EcoPontoWeb"),
-        BIKERSEEKER: document.getElementById("btn_BikerSeeker"),
-        BRUTOSBURGUER: document.getElementById("btn_BrutosBurguer"),
-        EMPREGO: document.getElementById("btn_empreGO"),
-        MEUCONDOMINIO: document.getElementById("btn_MeuCondominio")
-
-    }
-
     if (CONFIG_EXIBE_PROJETOS) {
         let url = "";
         switch (nomeProjeto) {

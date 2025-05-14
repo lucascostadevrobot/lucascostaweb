@@ -431,6 +431,27 @@ p {
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .content-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-itens img {
+    max-width: 100%;
+  }
+
+  .card-descricao {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .card-descricao button {
+    align-self: center;
+  }
+}
+
 .swiper {
   padding: 40px 0;
 }
