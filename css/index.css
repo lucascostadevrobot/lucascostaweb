@@ -363,10 +363,75 @@ p {
   color: #0d6efd;
 }
 
-.timelineFormacaoAcademicia-content p{
-    margin: 0;
+.timelineFormacaoAcademicia-content p {
+  margin: 0;
   font-size: 15px;
   opacity: 0.9;
 }
 
 /*===========Fim Section FormacaoAcademica==========*/
+
+/*===========Section Portfolio==========*/
+
+.container-portfolio {
+  padding: 40px;
+  width: auto;
+  height: auto;
+
+}
+
+.content-card {
+  display: flex;
+  width: auto;
+  height: auto;
+  max-width: 700px;
+  background-color: #6E69FF;
+  border: #6c757d;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.card-itens img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  background-color: #F8F5F5;
+}
+
+.card-descricao {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 3px;
+}
+
+.card-descricao p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-descricao button {
+  align-self: flex-start;
+  padding: 18px 50px;
+  background-color: white;
+  color: #6E69FF;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-descricao button:hover {
+  background-color: #F12C2C;
+  color: white;
+}
+
+/*===========Fim Section Portfolio==========*/
