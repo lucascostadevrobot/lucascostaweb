@@ -469,10 +469,8 @@
         <span class="tituloFrente">MEUS TRABALHOS</span>
         <span class="tituloFundo">PORTFOLIO</span>
       </div>
-
       <div class="swiper meuSwiperPortfolio">
         <div class="swiper-wrapper">
-
           <!-- Slide 1 -->
           <div class="swiper-slide">
             <div class="content-card">
@@ -481,16 +479,15 @@
               </div>
               <div class="card-descricao">
                 <p>
-                  Fui o criador oficial do Aplicativo ECOPONTO, levando o MVP para dentro da StartUp Ascender Ideias 
-                  onde fui um dos principais desenvolvedores. Com o ECOPONTO fui selecionado para estar 
-                  participando de um dos maiores eventos para BioStartups, o GreenRio, neste evento tive diversas 
+                  Fui o criador oficial do Aplicativo ECOPONTO, levando o MVP para dentro da StartUp Ascender Ideias
+                  onde fui um dos principais desenvolvedores. Com o ECOPONTO fui selecionado para estar
+                  participando de um dos maiores eventos para BioStartups, o GreenRio, neste evento tive diversas
                   experiências, ficando em segundo lugar com a apresentação do PITCH do MVP para os investidores anjos.
                 </p>
-                <button>Visualizar projeto</button>
+                <button id="btn_EcoPonto" onclick="intentsAbrirProjetos('ECOPONTO')">Visualizar projeto</button>
               </div>
             </div>
           </div>
-
           <!-- Slide 2 -->
           <div class="swiper-slide">
             <div class="content-card">
@@ -503,12 +500,11 @@
                   O intuito é fazer com que o aplicativo android tivesse um meio mais dinâmico e fácil de comunicação
                   com os usuários finais, aplicando formulários e link para dowloand na Google Play Store.
                 </p>
-                <button>Visualizar projeto</button>
+                <button id="btn_EcoPontoWeb" onclick="intentsAbrirProjetos('ECOPONTOWEB')">Visualizar projeto</button>
               </div>
             </div>
           </div>
-
-            <!-- Slide 3 -->
+          <!-- Slide 3 -->
           <div class="swiper-slide">
             <div class="content-card">
               <div class="card-itens">
@@ -518,15 +514,15 @@
                 <p>
                   O aplicativo mobile BikeSeeker foi desenvolvido como Projeto Final de Conclusão de curso durante
                   minha caminhada como aluno na faculdade. O projeto veio antes dos apps da Uber e 99, exclusivo para
-                  moto-taxista de Itaperuna. O Intuito do aplicativo era fornecer uma forma digna e com uma usabilidade simples
+                  moto-taxista de Itaperuna. O Intuito do aplicativo era fornecer uma forma digna e com uma usabilidade
+                  simples
                   para os passegeiros e motociclistas.
                 </p>
-                <button>Visualizar projeto</button>
+                <button id="btn_BikerSeeker" onclick="intentsAbrirProjetos('BIKERSEEKER')">Visualizar projeto</button>
               </div>
             </div>
           </div>
-
-             <!-- Slide 4 -->
+          <!-- Slide 4 -->
           <div class="swiper-slide">
             <div class="content-card">
               <div class="card-itens">
@@ -536,15 +532,15 @@
                 <p>
                   O sistema web BrutosBurguer veio inicialmente como um projeto para que eu pudesse colocar
                   minhas Hards Skills em prática durante a Formação de Dev Full Stack. Utilizando tecnologias modernas
-                  o sistema em fase de Desenvolvimento está com Front-end baseado em ReactJS e no Back-end estamos Utilizando
+                  o sistema em fase de Desenvolvimento está com Front-end baseado em ReactJS e no Back-end estamos
+                  Utilizando
                   Java Spring Boot e PostgreSQL
                 </p>
-                <button>Visualizar projeto</button>
+                <button id="btn_BrutosBurguer" onclick="intentsAbrirProjetos('BRUTOSBURGUER')">Visualizar projeto</button>
               </div>
             </div>
           </div>
-
-           <!-- Slide 5 -->
+          <!-- Slide 5 -->
           <div class="swiper-slide">
             <div class="content-card">
               <div class="card-itens">
@@ -552,20 +548,31 @@
               </div>
               <div class="card-descricao">
                 <p>
-                 Durante minha jornada como membro e Desenvolvedor na Ascender Ideias tive participações na Criação
-                 do aplicativo empreGO. O aplicativo para aplicações móveis tem como o intuito aproximar empresas e
-                 candidatos a vagas, que ao passarem por alguma empresa com vagas sinalizada no mapa, o mesmo recebe
-                 uma mensagem e alerta que o curriculo cadastrado esteja alinhado com a vaga em questão.
+                  Durante minha jornada como membro e Desenvolvedor na Ascender Ideias tive participações na Criação
+                  do aplicativo empreGO. O aplicativo para aplicações móveis tem como o intuito aproximar empresas e
+                  candidatos a vagas, que ao passarem por alguma empresa com vagas sinalizada no mapa, o mesmo recebe
+                  uma mensagem e alerta que o curriculo cadastrado esteja alinhado com a vaga em questão.
                 </p>
-                <button>Visualizar projeto</button>
+                <button id="btn_empreGO" onclick="intentsAbrirProjetos('EMPREGO')">Visualizar projeto</button>
               </div>
             </div>
           </div>
-
-
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="card-itens">
+                <img src="/assets/images/images-portfolio-meuCondominio.png" alt="Imagem BrutosBurguer">
+              </div>
+              <div class="card-descricao">
+                <p>
+                  Meu Condomínio é um sistema web voltado para a gestão de condominios. <strong>EM
+                    DESENVOLVIMENTO...</strong>
+                </p>
+                <button id="btn_MeuCondominio" onclick="intentsAbrirProjetos(MEUCONDOMINIO)">Visualizar projeto</button>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- Bolinhas -->
         <div class="swiper-paginacao"></div>
       </div>
     </div>
@@ -578,6 +585,8 @@
   integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
   </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/IntentsButtons.js"></script>
+
 
 <script>
   const swiper = new Swiper('.meuSwiperPortfolio', {
