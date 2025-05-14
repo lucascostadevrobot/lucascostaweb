@@ -374,13 +374,15 @@ p {
 /*===========Section Portfolio==========*/
 
 .container-portfolio {
-  padding: 40px;
+  padding: 40px 20px;
   width: auto;
   height: auto;
 
 }
 
 .content-card {
+  flex: 1 1 300px;
+
   display: flex;
   width: auto;
   height: auto;
@@ -399,7 +401,7 @@ p {
 }
 
 .card-descricao {
-  flex: 1;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -429,9 +431,16 @@ p {
   flex-wrap: wrap;
 }
 
-.card-descricao button:hover {
-  background-color: #F12C2C;
-  color: white;
+.swiper {
+  padding: 40px 0;
 }
 
-/*===========Fim Section Portfolio==========*/
+.swiper-slide {
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+}
+/*==========Fim Section Portfolio==========*/
+
+

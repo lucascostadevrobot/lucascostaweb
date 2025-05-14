@@ -8,6 +8,7 @@
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   <link href="/bootstrap/bootstrap.css" rel="stylesheet" />
   <link href="/css/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <title>Lucas da Costa</title>
 </head>
@@ -468,18 +469,85 @@
         <span class="tituloFrente">MEUS TRABALHOS</span>
         <span class="tituloFundo">PORTFOLIO</span>
       </div>
-      <div class="content-card">
-          <div class="card-itens">
-            <img src="/assets/images/images-portfolio-ecoponto.png" alt="Imagem do EcoPonto">
+
+      <div class="swiper meuSwiperPortfolio">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="card-itens">
+                <img src="/assets/images/images-portfolio-ecoponto.png" alt="Imagem do EcoPonto">
+              </div>
+              <div class="card-descricao">
+                <p>
+                  Fui o criador oficial do Aplicativo ECOPONTO, levando o MVP para dentro da StartUp Ascender Ideias 
+                  onde fui um dos principais desenvolvedores. Com o ECOPONTO fui selecionado para estar 
+                  participando de um dos maiores eventos para BioStartups, o GreenRio, neste evento tive diversas 
+                  experiências, ficando em segundo lugar com a apresentação do PITCH do MVP para os investidores anjos.
+                </p>
+                <button>Visualizar projeto</button>
+              </div>
+            </div>
           </div>
-          <div class="card-descricao">
-            <p>Fui o criador oficial do Aplicativo ECOPONTO, levando o MVP para dentro da StartUp Ascender Ideias.
-              Com o ECOPONTO fui selecionado para estar participando de um dos maiores eventos sobre BioStartups (GreenRio).
-              Sendo o único projeto do interior do Estado do Rio de Janeiro. Conquistando a segunda colocação na aprensentação
-              PITCH, para investidores anjos no evento.
-            </p>
-             <button>Visualizar projeto</button>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="card-itens">
+                <img src="/assets/images/images-portfolio-ecoponto-website.png" alt="Imagem WebEcoPonto">
+              </div>
+              <div class="card-descricao">
+                <p>
+                  WebSite instituicional do aplicativo EcoPonto. Tive participação no desenvolvimento do mesmo.
+                  O intuito é fazer com que o aplicativo android tivesse um meio mais dinâmico e fácil de comunicação
+                  com os usuários finais, aplicando formulários e link para dowloand na Google Play Store.
+                </p>
+                <button>Visualizar projeto</button>
+              </div>
+            </div>
           </div>
+
+            <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="card-itens">
+                <img src="/assets/images/images-portfolio-biker-seeker.png" alt="Imagem BikerSeeker">
+              </div>
+              <div class="card-descricao">
+                <p>
+                  O aplicativo mobile BikeSeeker foi desenvolvido como Projeto Final de Conclusão de curso durante
+                  minha caminhada como aluno na faculdade. O projeto veio antes dos apps da Uber e 99, exclusivo para
+                  moto-taxista de Itaperuna. O Intuito do aplicativo era fornecer uma forma digna e com uma usabilidade simples
+                  para os passegeiros e motociclistas.
+                </p>
+                <button>Visualizar projeto</button>
+              </div>
+            </div>
+          </div>
+
+             <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="content-card">
+              <div class="card-itens">
+                <img src="/assets/images/images-portfolio-BrutosBurguer.png" alt="Imagem BrutosBurguer">
+              </div>
+              <div class="card-descricao">
+                <p>
+                  O sistema web BrutosBurguer veio inicialmente como um projeto para que eu pudesse colocar
+                  minhas Hards Skills em prática durante a Formação de Dev Full Stack. Utilizando tecnologias modernas
+                  o sistema em fase de Desenvolvimento está com Front-end baseado em ReactJS e no Back-end estamos Utilizando
+                  Java Spring Boot e PostgreSQL
+                </p>
+                <button>Visualizar projeto</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bolinhas -->
+        <div class="swiper-paginacao"></div>
       </div>
     </div>
   </section>
@@ -490,6 +558,27 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
   </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script>
+  const swiper = new Swiper('.meuSwiperPortfolio', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-paginacao',
+      clickable: true,
+    },
+  });
+</script>
 
 </html>
