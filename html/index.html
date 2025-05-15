@@ -61,7 +61,7 @@
   <!-- ======== Fim Home  ========-->
 
   <!-- ======== Sobre  ========-->
-  <section  id="ancoraSobre">
+  <section id="ancoraSobre">
     <div class="tituloSobreposto">
       <span class="tituloFrente">MINHA HISTÓRIA</span>
       <span class="tituloFundo">SOBRE</span>
@@ -536,7 +536,8 @@
                   Utilizando
                   Java Spring Boot e PostgreSQL
                 </p>
-                <button id="btn_BrutosBurguer" onclick="intentsAbrirProjetos('BRUTOSBURGUER')">Visualizar projeto</button>
+                <button id="btn_BrutosBurguer" onclick="intentsAbrirProjetos('BRUTOSBURGUER')">Visualizar
+                  projeto</button>
               </div>
             </div>
           </div>
@@ -579,6 +580,41 @@
   </section>
   <!-- ========Portfolio========-->
 
+  <!--========Contato========-->
+  <section class="ancora-contato">
+    <div class="container-contato">
+
+      <div class="container-formulario">
+        <img src="/assets/images/image-formulario-contato.jpg" alt="">
+        <form id="form-contato">
+          <input type="text" name="assunto" placeholder="Assunto" required><br>
+          <input type="text" name="nome" placeholder="Seu nome" required <input type="email" name="email"
+            placeholder="Seu Email" required><br>
+          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea><br>
+          <button type="submit" data-bs-toggle="modal" data-bs-target="#idModalSucessoFormulario">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal fade" id="idModalSucessoFormulario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="idModalSucessoFormulario">Mensagem enviada.</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Muito obrigado! Sua mensagem será lida em breve e respondida.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--========Fim Contato========-->
+
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
@@ -586,6 +622,10 @@
   </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/js/IntentsButtons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="/js/EmailJs.js"></script>
+
+
 
 
 <script>

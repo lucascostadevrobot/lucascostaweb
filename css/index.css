@@ -462,4 +462,126 @@ p {
   display: flex;
   justify-content: center;
 }
+
 /*==========Fim Section Portfolio==========*/
+.container-contato {
+  background-color: #F8F5F5;
+  padding: 20px;
+}
+
+.container-formulario {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  background-color: #6E69FF;
+  max-width: 1000px;
+  align-items: center;
+  margin: auto;
+
+}
+
+.container-formulario img {
+  width: auto;
+  height: 600px;
+}
+
+#form-contato {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+
+}
+
+#form-contato input {
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+#form-contato button {
+  border-radius: 14px;
+  align-items: center;
+  padding: 10px;
+
+  transition: all 0.3s ease;
+  /* Transição suave para todas as propriedades */
+
+  /* Efeito de hover */
+  &:hover {
+    background-color: rgba(241, 44, 44, 0.97);
+    /* Muda a cor de fundo */
+    color: rgb(255, 255, 255);
+    /* Muda a cor do texto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
+    transform: translateY(-6px);
+    /* Leve elevação do card */
+  }
+
+  /* Efeito de foco (quando o botão está focado) */
+  &:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    box-shadow: 0 0 10px rgba(235, 255, 51, 0.97);
+    /* Sombra quando focado */
+  }
+
+}
+
+#form-contato button::hover {
+  background-color: rgba(241, 44, 44, 0.97);
+  transform: translateY(-4px);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+
+  .container-formulario img {
+  width: 0;
+  height: 0;
+}
+
+
+  #form-contato {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+
+  }
+
+  #form-contato input {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 14px;
+    padding: 20px;
+  }
+
+  #form-contato button {
+    border-radius: 14px;
+    align-items: center;
+    padding: 10px;
+
+  }
+
+  #form-contato button::hover {
+    background-color: rgba(241, 44, 44, 0.97);
+    transform: translateY(-4px);
+    color: rgb(255, 255, 255);
+  }
+}
+
+/*==========Section Contato==========*/
