@@ -498,6 +498,13 @@ p {
 
 }
 
+#form-contato h6 {
+  align-self: center;
+  font-size: 50px;
+  font-weight: 400;
+  color: aliceblue;
+}
+
 #form-contato input {
   width: 300px;
   height: 50px;
@@ -545,9 +552,9 @@ p {
 @media (max-width: 768px) {
 
   .container-formulario img {
-  width: 0;
-  height: 0;
-}
+    width: 0;
+    height: 0;
+  }
 
 
   #form-contato {
@@ -561,6 +568,7 @@ p {
     margin: auto;
 
   }
+
 
   #form-contato input {
     width: 300px;
@@ -585,3 +593,19 @@ p {
 }
 
 /*==========Section Contato==========*/
+
+/*==========Section Footer==========*/
+footer {
+  width: auto;
+  height: 50px;
+  color: #f1f1ff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(71, 71, 71);
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(71, 71, 71);
+}

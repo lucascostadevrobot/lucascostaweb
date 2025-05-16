@@ -33,3 +33,17 @@ function intentsAbrirProjetos(nomeProjeto) {
 }
 
 
+function intentAbrirPaginaContato(isConversar) {
+    var CONFIG_EXIBIR_PAGINA_CONTATO = true;
+
+    if (CONFIG_EXIBIR_PAGINA_CONTATO) {
+        if (isConversar === 'true') {
+            let url = window.open('https://www.linkedin.com/in/lucas-costa-2219b5189/', '_blank')
+            url.focus();
+        }
+    } else {
+        alert("Não foi possível entrar em contato agora, tente mais tarde.")
+    }
+}
+
+

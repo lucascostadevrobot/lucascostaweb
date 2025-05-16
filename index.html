@@ -52,7 +52,7 @@
       <h1>OLÁ, EU SOU LUCAS</h1>
       <p>Sou Bacharel em Sistemas de Informações.</p>
       <p>Desenvolvedor de Software e Analista de Sistemas.</p>
-      <button>VAMOS CONVERSAR?</button>
+      <button type="button" name="btn_isConversar" onclick="intentAbrirPaginaContato('true')">VAMOS CONVERSAR?</button>
     </div>
     <div class="imagem-perfil">
       <img src="./assets/images/perfil-home-lucas.png" />
@@ -84,17 +84,17 @@
       <div class="listaDadosSobre">
         <ul>
           <li>
-            <img src="/assets/images/computador-portatil.png" alt="Imagem Computador Portatil">
+            <img src="./assets/images/computador-portatil.png" alt="Imagem Computador Portatil">
             +05 Anos
             de experiência em TI
           </li>
           <li>
-            <img src="/assets/images/project-management.png" alt="Imagem Computador Portatil">
+            <img src="./assets/images/project-management.png" alt="Imagem Computador Portatil">
             +05 Projetos
             contribuídos
           </li>
           <li>
-            <img src="/assets/images/gerenciamento-de-equipe.png" alt="Imagem Computador Portatil">
+            <img src="./assets/images/gerenciamento-de-equipe.png" alt="Imagem Computador Portatil">
             +04 empresa
             trabalhadas
           </li>
@@ -132,7 +132,8 @@
               <div class="timeline-item">
                 <div class="timeline-date">2022 - 2024</div>
                 <div class="timeline-content">
-                  <img src="./assets/images/images-ionsistemas.jpg" alt="Logo IonSistemas" class="content-logo-empresas">
+                  <img src="./assets/images/images-ionsistemas.jpg" alt="Logo IonSistemas"
+                    class="content-logo-empresas">
                   <h5>Analista de Sistemas / Dev Android</h5>
                   <p><strong>Ion Sistemas</strong><br>
                     Apps Android nativos, PL/SQL, sistema web, metodologias ágeis e documentação técnica.</p>
@@ -152,7 +153,8 @@
               <div class="timeline-item">
                 <div class="timeline-date">2019 - 2021</div>
                 <div class="timeline-content">
-                  <img src="./assets/images/images-contacontabil.png" alt="Logo ContaContabil" class="content-logo-empresas">
+                  <img src="./assets/images/images-contacontabil.png" alt="Logo ContaContabil"
+                    class="content-logo-empresas">
                   <h5>Desenvolvedor Web / Social Media</h5>
                   <p><strong>Conta Contábil</strong><br>
                     Criação de sites WordPress, redes sociais, conteúdo digital e edição de vídeos.</p>
@@ -172,7 +174,8 @@
               <div class="timeline-item">
                 <div class="timeline-date">2017 - 2019</div>
                 <div class="timeline-content">
-                  <img src="./assets/images/images-ascenderideias.png" alt="Logo Ascender" class="content-logo-empresas">
+                  <img src="./assets/images/images-ascenderideias.png" alt="Logo Ascender"
+                    class="content-logo-empresas">
                   <h5>Desenvolvedor de Software</h5>
                   <p><strong>Ascender Ideias</strong><br>
                     Criador do app EcoPonto (Google Play), destaque no evento GreenRio/SEBRAE-RJ.</p>
@@ -580,12 +583,13 @@
   <!-- ========Portfolio========-->
 
   <!--========Contato========-->
-  <section class="ancoraContato">
+  <section id="ancoraContato">
     <div class="container-contato">
 
       <div class="container-formulario">
         <img src="./assets/images/image-formulario-contato.jpg" alt="">
         <form id="form-contato">
+          <h6>Fale comigo</h6>
           <input type="text" name="assunto" placeholder="Assunto" required><br>
           <input type="text" name="nome" placeholder="Seu nome" required <input type="email" name="email"
             placeholder="Seu Email" required><br>
@@ -614,6 +618,16 @@
     </div>
   </section>
   <!--========Fim Contato========-->
+
+  <!--========Footer========-->
+    <footer>
+      <div>
+        <p>Copyright © 2025 Lucas da Costa. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  <!--========Footer========-->
+
+
 
 
 </body>
