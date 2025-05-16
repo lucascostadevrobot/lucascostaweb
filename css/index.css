@@ -104,6 +104,8 @@ p {
   position: relative;
   text-align: center;
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .tituloFrente {
