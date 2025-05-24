@@ -38,7 +38,7 @@ function intentAbrirPaginaContato(isConversar) {
 
     if (CONFIG_EXIBIR_PAGINA_CONTATO) {
         if (isConversar === 'true') {
-            let url = window.open('https://www.linkedin.com/in/lucas-costa-2219b5189/', '_blank')
+            let url = window.open('https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=lucascostadev@gmail.com', '_blank')
             url.focus();
         }
     } else {

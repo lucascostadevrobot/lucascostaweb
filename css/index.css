@@ -5,13 +5,12 @@
   box-sizing: border-box;
 }
 
-/* Estilo dos parágrafos */
 p {
   line-height: 1.2;
   margin-bottom: 4px;
 }
 
-/*========Section Home========*/
+/*Section Home*/
 
 /* Seção principal da home */
 .homeStyle {
@@ -21,14 +20,13 @@ p {
   background-color: #F8F5F5;
   display: flex;
   flex-wrap: wrap;
-  /* Garante responsividade */
   align-items: center;
   justify-content: space-evenly;
 
 }
 
 .homeStyle h1 {
-  size: 900px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -41,30 +39,21 @@ p {
   border-radius: 10px;
 
   transition: all 0.3s ease;
-  /* Transição suave para todas as propriedades */
 
   /* Efeito de hover */
   &:hover {
     background-color: rgba(241, 44, 44, 0.97);
-    /* Muda a cor de fundo */
     color: rgb(255, 255, 255);
-    /* Muda a cor do texto */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    /* Adiciona sombra */
     transform: translateY(-6px);
-    /* Leve elevação do card */
   }
 
-  /* Efeito de foco (quando o botão está focado) */
   &:focus {
     outline: none;
-    /* Remove o contorno padrão */
     box-shadow: 0 0 10px rgba(235, 255, 51, 0.97);
-    /* Sombra quando focado */
   }
 }
 
-/* Container da imagem */
 .imagem-perfil {
   display: flex;
   align-items: center;
@@ -73,7 +62,6 @@ p {
   padding-left: 30px;
 }
 
-/* Estilo da imagem */
 .imagem-perfil img {
   width: 100%;
   max-width: 200px;
@@ -82,11 +70,11 @@ p {
   display: block;
 }
 
-/*========Fim Section Home========*/
+/*Fim Section Home*/
 
 
 
-/*========Section Titulos das Sections========*/
+/*Section Titulos das Sections*/
 
 /*Estilização para os titulos das sections*/
 .titulosSections {
@@ -130,7 +118,6 @@ p {
   opacity: 0.4;
 }
 
-/* Responsividade extra para celular */
 @media (max-width: 576px) {
   .tituloFundo {
     max-width: 80px;
@@ -155,11 +142,9 @@ p {
     margin: 0;
   }
 }
+/*Fim Section Titulos das Sections*/
 
-
-/*========Fim Section Titulos das Sections========*/
-
-/*========Section Sobre========*/
+/*Section Sobre*/
 .sectionSobre {
   padding: 70px;
   margin: auto;
@@ -168,7 +153,6 @@ p {
   align-items: center;
   justify-content: center;
   align-content: center;
-  /* flex-direction: row; */
 
 }
 
@@ -235,7 +219,6 @@ p {
 
 }
 
-/*Time line sobre minhas experiências*/
 .timeline {
   position: relative;
   padding: 20px 0;
@@ -285,10 +268,14 @@ p {
   height: 50px;
 }
 
-/* Fim Time line sobre minhas experiências*/
+.img-formatura-lucas {
+  width: 40px;
+  height: 20px;
+}
 
 
-/*===========Section Habilidades==========*/
+
+/*Section Habilidades*/
 .container-section-habilidades {
   background-color: #F8F5F5;
   max-width: 900px;
@@ -311,28 +298,25 @@ p {
   transition: color 0.3s ease;
 }
 
-/* Cor ao abrir o item */
 .accordion-button:not(.collapsed) {
   background-color: #f1f1ff;
   color: #6E69FF;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
 }
 
-/* Remover bordas externas*/
 .accordion-item {
   border: none;
 }
 
-/* Responsividade extra para celular */
 @media (max-width: 576px) {
   .accordion-button {
     font-size: 16px;
   }
 }
 
-/*===========Fim Section Habilidades==========*/
+/*Fim Section Habilidades*/
 
-/*===========Section FormacaoAcademica==========*/
+/*Section FormacaoAcademica*/
 
 .container-section-formacaoAcademica {
   width: auto;
@@ -399,9 +383,9 @@ p {
   opacity: 0.9;
 }
 
-/*===========Fim Section FormacaoAcademica==========*/
+/*Fim Section FormacaoAcademica*/
 
-/*===========Section Portfolio==========*/
+/*Section Portfoli*/
 
 .container-portfolio {
   padding: 40px 20px;
@@ -493,7 +477,7 @@ p {
   justify-content: center;
 }
 
-/*==========Fim Section Portfolio==========*/
+/*Fim Section Portfolio*/
 .container-contato {
   background-color: #F8F5F5;
   padding: 20px;
@@ -549,26 +533,18 @@ p {
   padding: 10px;
 
   transition: all 0.3s ease;
-  /* Transição suave para todas as propriedades */
 
-  /* Efeito de hover */
+  /*Efeito de hover*/
   &:hover {
     background-color: rgba(241, 44, 44, 0.97);
-    /* Muda a cor de fundo */
     color: rgb(255, 255, 255);
-    /* Muda a cor do texto */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    /* Adiciona sombra */
     transform: translateY(-6px);
-    /* Leve elevação do card */
   }
 
-  /* Efeito de foco (quando o botão está focado) */
   &:focus {
     outline: none;
-    /* Remove o contorno padrão */
     box-shadow: 0 0 10px rgba(235, 255, 51, 0.97);
-    /* Sombra quando focado */
   }
 
 }
@@ -622,9 +598,9 @@ p {
   }
 }
 
-/*==========Section Contato==========*/
+/*Section Contato*/
 
-/*==========Section Footer==========*/
+/*Section Footer*/
 footer {
   width: auto;
   height: 50px;
@@ -637,5 +613,104 @@ footer {
   background-color: rgb(71, 71, 71);
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(71, 71, 71);
 }
+
+/*Modo dark*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  padding: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+ 
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider img{
+  padding: 8px;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .homeStyle,
+.dark-mode .container-section-habilidades,
+.dark-mode .container-section-formacaoAcademica,
+.dark-mode .container-contato,
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode .accordion-button {
+  color: #ffcc00;
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+  background-color: #333;
+}
+
+.dark-mode .card-descricao {
+  color: #f1f1f1;
+}
+
+.dark-mode .card-descricao button {
+  background-color: #f1f1f1;
+  color: #1e1e1e;
+}
+/*Fim Modo dark*/
